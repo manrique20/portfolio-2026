@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "introCta": "Agendar intro",
+    "cvCta": "Descargar CV"
+  },
+  "home": {
+    "kicker": "Ingenieria enfocada en frontend y producto",
+    "featuredTitle": "Proyectos Destacados",
+    "featuredSubtitle": "Productos donde lidere arquitectura frontend, integraciones con IA y rendimiento.",
+    "experienceCta": "Ver experiencia",
+    "contactCta": "Contactarme",
+    "projectsCta": "Ver todos los proyectos",
+    "heroBlurb": "Construyo interfaces claras para sistemas complejos: suscripciones, marketplaces de eventos y productos con enfoque en IA.",
+    "proofYears": "4+ años en equipos de producto",
+    "proofUsers": "10,000+ usuarios activos en plataforma por suscripción",
+    "proofFocus": "Nuxt + Vue + TypeScript + Integraciones de IA",
+    "metricYearsLabel": "Años entregando productos en produccion",
+    "metricUsersLabel": "Usuarios activos atendidos en producto de suscripcion",
+    "metricProjectsLabel": "Proyectos destacados en este portafolio",
+    "workTitle": "Como trabajo",
+    "workStep1": "Entiendo objetivo de negocio y flujo de usuario antes de tocar codigo.",
+    "workStep2": "Diseno arquitectura modular para entregar rapido y escalar sin deuda.",
+    "workStep3": "Mido impacto con rendimiento, calidad UX y metricas de negocio."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Casos reales creados para usuarios, crecimiento y entrega confiable, con enfoque en UX y escalabilidad.",
+    "viewCaseStudy": "Ver caso de estudio",
+    "back": "Volver a proyectos",
+    "impact": "Impacto",
+    "challenge": "Reto",
+    "approach": "Enfoque",
+    "outcome": "Resultado",
+    "features": "Puntos clave",
+    "stack": "Tecnologias",
+    "live": "Abrir proyecto"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mas de 4 años construyendo productos web en equipos de alta velocidad.",
+    "skillsTitle": "Habilidades clave"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Disponible para desarrollo de producto frontend y proyectos full-stack seleccionados, con enfoque en UX y escalabilidad.",
+    "email": "Correo",
+    "phone": "Telefono",
+    "location": "Ubicacion"
+  },
+  "blog": {
+    "title": "Notas Tecnicas",
+    "subtitle": "Escritos cortos de trabajo real: decisiones de arquitectura, integraciones de IA y aprendizajes de entrega.",
+    "readMore": "Leer articulo",
+    "back": "Volver al blog"
+  },
+  "common": {
+    "role": "Rol"
+  }
+}

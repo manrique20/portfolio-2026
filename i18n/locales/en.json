@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "experience": "Experience",
+    "contact": "Contact",
+    "introCta": "Book intro",
+    "cvCta": "Download CV"
+  },
+  "home": {
+    "kicker": "Frontend-heavy, product-driven engineering",
+    "featuredTitle": "Featured Projects",
+    "featuredSubtitle": "Products where I led frontend architecture, AI integrations, and performance work.",
+    "experienceCta": "Explore experience",
+    "contactCta": "Contact me",
+    "projectsCta": "View all projects",
+    "heroBlurb": "I build calm interfaces for complex systems: subscriptions, event marketplaces, and AI-first products.",
+    "proofYears": "4+ years in production teams",
+    "proofUsers": "10,000+ active users on subscription platform",
+    "proofFocus": "Nuxt + Vue + TypeScript + AI integrations",
+    "metricYearsLabel": "Years shipping production products",
+    "metricUsersLabel": "Active users served in subscription product",
+    "metricProjectsLabel": "Featured projects in this portfolio",
+    "workTitle": "How I work",
+    "workStep1": "Understand product goal and user journey before touching code.",
+    "workStep2": "Design modular architecture that ships fast and scales cleanly.",
+    "workStep3": "Measure impact with performance, UX quality, and business metrics."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Case studies built for real users, growth, and reliable delivery.",
+    "viewCaseStudy": "View case study",
+    "back": "Back to projects",
+    "impact": "Impact",
+    "challenge": "Challenge",
+    "approach": "Approach",
+    "outcome": "Outcome",
+    "features": "Highlights",
+    "stack": "Stack",
+    "live": "Open live project"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "4+ years building production-grade web products in fast-moving teams.",
+    "skillsTitle": "Core skills"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Available for frontend-heavy product development and selected full-stack projects.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location"
+  },
+  "blog": {
+    "title": "Technical Notes",
+    "subtitle": "Compact write-ups from real product work: architecture decisions, AI integration patterns, and delivery lessons.",
+    "readMore": "Read article",
+    "back": "Back to blog"
+  },
+  "common": {
+    "role": "Role"
+  }
+}

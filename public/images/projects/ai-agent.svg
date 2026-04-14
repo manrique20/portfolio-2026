@@ -1,0 +1,12 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#09090B"/>
+  <rect x="70" y="70" width="1060" height="580" rx="28" fill="#18181B"/>
+  <rect x="120" y="150" width="360" height="430" rx="24" fill="#27272A"/>
+  <rect x="520" y="150" width="560" height="250" rx="24" fill="#27272A"/>
+  <rect x="520" y="430" width="560" height="150" rx="24" fill="#27272A"/>
+  <rect x="150" y="200" width="300" height="24" rx="12" fill="#3F3F46"/>
+  <rect x="150" y="242" width="210" height="20" rx="10" fill="#52525B"/>
+  <circle cx="1040" cy="122" r="22" fill="#A3E635"/>
+  <text x="120" y="120" fill="#FAFAFA" font-size="40" font-family="Arial, sans-serif" font-weight="700">AI Agent Dashboard</text>
+  <text x="120" y="650" fill="#A1A1AA" font-size="24" font-family="Arial, sans-serif">Chat + Computer Use Agent Flows</text>
+</svg>
