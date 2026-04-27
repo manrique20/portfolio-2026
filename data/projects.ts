@@ -263,7 +263,7 @@ export const projects: PortfolioProject[] = [
   {
     slug: "ok724",
     name: "OK724",
-    thumbnail: "/images/projects/ok724.svg",
+    thumbnail: "/images/projects/ok724.png",
     thumbnailPosition: "center top",
     tagline: {
       en: "Mobility web platform connecting people who are moving with nearby available drivers.",
@@ -372,6 +372,67 @@ export const projects: PortfolioProject[] = [
     },
     links: {
       live: "https://webapp.vitapp.co/login",
+    },
+  },
+  {
+    slug: "p2p-sport",
+    name: "P2P Sport",
+    thumbnail: "/images/projects/p2p.png",
+    thumbnailPosition: "center top",
+    tagline: {
+      en: "LinkedIn-style social platform for athletes, coaches, and sports professionals.",
+      es: "Plataforma social estilo LinkedIn para atletas, entrenadores y profesionales del deporte.",
+    },
+    role: {
+      en: "Frontend Developer",
+      es: "Desarrollador Frontend",
+    },
+    summary: {
+      en: "Built the user-facing web application for a sports networking platform where athletes and coaches can create profiles, showcase achievements, and connect with opportunities.",
+      es: "Desarrolle la aplicacion web de cara al usuario para una plataforma de networking deportivo donde atletas y entrenadores pueden crear perfiles, mostrar logros y conectarse con oportunidades.",
+    },
+    challenge: {
+      en: "Sports professionals needed a dedicated space to showcase credentials and performance data in a way that general social networks couldn't support.",
+      es: "Los profesionales del deporte necesitaban un espacio dedicado para mostrar credenciales y datos de rendimiento que las redes sociales generales no podian soportar.",
+    },
+    approach: {
+      en: "Designed profile-centric flows for athletes and coaches, implemented dynamic feeds, and built structured sections for achievements, stats, and career history.",
+      es: "Disene flujos centrados en perfiles para atletas y entrenadores, implemente feeds dinamicos y construi secciones estructuradas para logros, estadisticas e historial de carrera.",
+    },
+    outcome: {
+      en: "Athletes and coaches can present their sports careers professionally and discover relevant connections within their discipline.",
+      es: "Atletas y entrenadores pueden presentar sus carreras deportivas de forma profesional y descubrir conexiones relevantes dentro de su disciplina.",
+    },
+    impact: {
+      en: "Delivered a sport-specific networking experience that bridges the gap between athletic talent and professional opportunities.",
+      es: "Entregue una experiencia de networking especifica para el deporte que conecta el talento atletico con oportunidades profesionales.",
+    },
+    stack: [
+      "Nuxt 3",
+      "Vue 3",
+      "TypeScript",
+      "Tailwind CSS",
+      "Social Networking",
+      "Primevue 3",
+    ],
+    features: {
+      en: [
+        "Athlete and coach profile creation",
+        "Dynamic sports activity feed",
+        "Achievement and stats showcasing",
+        "Professional networking and connections",
+        "Career history and credentials display",
+      ],
+      es: [
+        "Creacion de perfiles para atletas y entrenadores",
+        "Feed dinamico de actividad deportiva",
+        "Visualizacion de logros y estadisticas",
+        "Networking profesional y conexiones",
+        "Historial de carrera y credenciales",
+      ],
+    },
+    links: {
+      live: "https://webapp.p2psport.com/",
     },
   },
   {
