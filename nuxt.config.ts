@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     groqApiKey: "",
     public: {
       plausibleDomain: "",
-      siteUrl: "https://juansebastianmanrique.dev",
+      siteUrl: "https://jsmg-portfolio-2026.vercel.app/",
     },
   },
   css: ["~/assets/css/main.css"],
