@@ -62,7 +62,7 @@ useHead(() => ({
       v-reveal="{ delay: 90 }"
       :class="[
         'tw-overflow-hidden tw-rounded-2xl',
-        project.slug === 'vitapp-health'
+        project.displayStyle === 'mobile'
           ? 'tw-flex tw-justify-center tw-bg-zinc-900/40 tw-py-10'
           : 'tw-border tw-border-zinc-800',
       ]"
@@ -71,7 +71,7 @@ useHead(() => ({
         :src="project.thumbnail"
         :alt="`${project.name} project thumbnail`"
         :class="[
-          project.slug === 'vitapp-health'
+          project.displayStyle === 'mobile'
             ? 'tw-h-auto tw-max-w-[280px] tw-rounded-[2.5rem] tw-border-8 tw-border-zinc-800 tw-shadow-2xl'
             : 'tw-h-64 tw-w-full tw-object-cover md:tw-h-80',
         ]"

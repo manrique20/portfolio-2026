@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   plugins: ['~/plugins/anime.server.ts', '~/plugins/anime.client.ts'],
   runtimeConfig: {
     public: {
-      plausibleDomain: ''
+      plausibleDomain: '',
+      siteUrl: 'https://juansebastianmanrique.dev'
     }
   },
   css: ['~/assets/css/main.css'],

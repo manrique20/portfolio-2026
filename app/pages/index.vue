@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const { public: { siteUrl } } = useRuntimeConfig()
 const localePath = useLocalePath()
 const { localizedProfile, localizedProjects } = usePortfolioContent()
 
@@ -34,7 +35,7 @@ useHead(() => ({
           addressLocality: 'Bogota',
           addressCountry: 'CO'
         },
-        url: 'https://portfolio.local',
+        url: siteUrl,
         knowsAbout: ['Nuxt', 'Vue', 'TypeScript', 'Frontend Architecture', 'AI Integrations']
       })
     }

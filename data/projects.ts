@@ -9,6 +9,7 @@ export interface PortfolioProject {
   name: string;
   thumbnail: string;
   thumbnailPosition?: string;
+  displayStyle?: 'mobile' | 'desktop';
   tagline: LocalizedText;
   role: LocalizedText;
   summary: LocalizedText;
@@ -323,6 +324,7 @@ export const projects: PortfolioProject[] = [
     name: "VitApp Health",
     thumbnail: "/images/projects/vitapp.png",
     thumbnailPosition: "center top",
+    displayStyle: "mobile",
     tagline: {
       en: "Health web app for registration, tracking, and AI-assisted facial analysis.",
       es: "Webapp de salud para registro, seguimiento y analisis facial asistido por IA.",

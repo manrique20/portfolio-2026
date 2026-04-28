@@ -21,7 +21,7 @@ export const profile = {
     phone: '+57 310 809 7564'
   },
   social: {
-    github: 'https://github.com/',
-    linkedin: 'https://www.linkedin.com/'
+    github: 'https://github.com/manrique20',
+    linkedin: 'https://www.linkedin.com/in/juan-sebastian-manrique-375048218/'
   }
 }
