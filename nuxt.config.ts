@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
   plugins: ["~/plugins/anime.server.ts", "~/plugins/anime.client.ts"],
   runtimeConfig: {
-    claudeApiKey: "",
+    groqApiKey: "",
     public: {
       plausibleDomain: "",
       siteUrl: "https://juansebastianmanrique.dev",

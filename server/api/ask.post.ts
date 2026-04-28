@@ -1,4 +1,4 @@
-import Anthropic from "@anthropic-ai/sdk";
+import Groq from "groq-sdk";
 
 const SYSTEM_PROMPT = `You are an AI assistant embedded in Juan Sebastian Manrique Garcia's personal portfolio website. Your ONLY purpose is to answer questions about Juan Sebastian — his professional background, skills, projects, and work experience.
 
@@ -64,31 +64,32 @@ export default defineEventHandler(async (event) => {
   }
 
   const config = useRuntimeConfig();
-  if (!config.claudeApiKey) {
+  if (!config.groqApiKey) {
     throw createError({ statusCode: 500, statusMessage: "AI not configured" });
   }
 
-  const client = new Anthropic({ apiKey: config.claudeApiKey as string });
+  const groq = new Groq({ apiKey: config.groqApiKey as string });
 
   try {
-    const response = await client.messages.create({
-      model: "claude-haiku-4-5",
+    const completion = await groq.chat.completions.create({
+      model: "meta-llama/llama-4-scout-17b-16e-instruct",
       max_tokens: 1024,
-      system: SYSTEM_PROMPT,
-      messages: [{ role: "user", content: question }],
+      messages: [
+        { role: "system", content: SYSTEM_PROMPT },
+        { role: "user", content: question },
+      ],
     });
 
-    const first = response.content[0];
-    const text = first?.type === "text" ? first.text : "";
+    const text = completion.choices[0]?.message?.content ?? "";
     return { answer: text.trim() };
   } catch (err: unknown) {
     const msg = String((err as { message?: string })?.message ?? "");
-    console.error("[Claude] error:", msg);
+    console.error("[Groq] error:", msg);
 
     const isRateLimit =
       msg.includes("429") ||
       msg.toLowerCase().includes("rate_limit") ||
-      msg.toLowerCase().includes("overloaded");
+      msg.toLowerCase().includes("rate limit");
 
     throw createError({
       statusCode: isRateLimit ? 429 : 500,
