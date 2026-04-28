@@ -1,0 +1,11 @@
+.projects-page {
+  @apply tw-space-y-10;
+}
+
+.projects-page__grid {
+  @apply tw-grid tw-gap-6;
+
+  @screen md {
+    @apply tw-grid-cols-2;
+  }
+}

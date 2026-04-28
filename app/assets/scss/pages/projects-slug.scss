@@ -1,0 +1,126 @@
+.project-page {
+  @apply tw-space-y-10;
+}
+
+.back-link {
+  @apply tw-inline-flex tw-items-center tw-gap-2 tw-text-sm tw-font-semibold tw-text-zinc-300 tw-transition;
+
+  &:hover {
+    @apply tw-text-white;
+  }
+}
+
+.project-header {
+  @apply tw-space-y-5;
+}
+
+.project-header__name {
+  @apply tw-text-4xl tw-font-semibold tw-text-white;
+
+  @screen md {
+    @apply tw-text-5xl;
+  }
+}
+
+.project-header__tagline {
+  @apply tw-text-lg tw-text-zinc-200;
+}
+
+.project-header__summary {
+  @apply tw-max-w-3xl tw-leading-relaxed tw-text-zinc-300;
+}
+
+.project-img-wrapper {
+  @apply tw-overflow-hidden tw-rounded-2xl;
+
+  &--desktop {
+    @apply tw-border tw-border-zinc-800;
+  }
+
+  &--mobile {
+    @apply tw-flex tw-justify-center tw-bg-zinc-900/40 tw-py-10;
+  }
+}
+
+.project-img {
+  &--desktop {
+    @apply tw-h-64 tw-w-full tw-object-cover;
+
+    @screen md {
+      @apply tw-h-80;
+    }
+  }
+
+  &--mobile {
+    @apply tw-h-auto tw-rounded-[2.5rem] tw-border-8 tw-border-zinc-800 tw-shadow-2xl;
+    max-width: 280px;
+  }
+}
+
+.card {
+  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-5;
+
+  &__title {
+    @apply tw-mb-3 tw-text-xl tw-font-semibold tw-text-white;
+  }
+
+  &__body {
+    @apply tw-leading-relaxed tw-text-zinc-300;
+  }
+}
+
+.impact-grid {
+  @apply tw-grid tw-gap-6;
+
+  @screen lg {
+    @apply tw-grid-cols-3;
+  }
+}
+
+.impact-card {
+  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-5;
+
+  @screen lg {
+    grid-column: span 3;
+  }
+
+  &__title {
+    @apply tw-mb-3 tw-text-xl tw-font-semibold tw-text-white;
+  }
+
+  &__body {
+    @apply tw-leading-relaxed tw-text-zinc-300;
+  }
+}
+
+.case-study-grid {
+  @apply tw-grid tw-gap-6;
+
+  @screen lg {
+    @apply tw-grid-cols-3;
+  }
+}
+
+.detail-grid {
+  @apply tw-grid tw-gap-6;
+
+  @screen md {
+    @apply tw-grid-cols-3;
+  }
+}
+
+.features-list {
+  @apply tw-space-y-2 tw-text-zinc-300;
+}
+
+.stack-tags {
+  @apply tw-flex tw-flex-wrap tw-gap-2;
+}
+
+.tag {
+  @apply tw-rounded-full tw-border tw-border-zinc-700 tw-px-3 tw-py-1 tw-text-xs tw-text-zinc-200;
+}
+
+.live-btn {
+  @apply tw-inline-flex tw-items-center tw-gap-2 tw-rounded-full tw-bg-lime-300 tw-px-5 tw-py-3 tw-text-sm tw-font-semibold tw-text-zinc-950;
+}

@@ -6,12 +6,10 @@ defineProps<{
 </script>
 
 <template>
-  <header class="tw-max-w-3xl tw-space-y-4">
-    <h2 class="tw-text-3xl tw-font-semibold tw-tracking-tight tw-text-white md:tw-text-4xl">
-      {{ title }}
-    </h2>
-    <p class="tw-text-base tw-leading-relaxed tw-text-zinc-300">
-      {{ subtitle }}
-    </p>
+  <header class="section-title">
+    <h2 class="section-title__heading">{{ title }}</h2>
+    <p class="section-title__subtitle">{{ subtitle }}</p>
   </header>
 </template>
+
+<style lang="scss" scoped src="~/assets/scss/components/section-title.scss" />

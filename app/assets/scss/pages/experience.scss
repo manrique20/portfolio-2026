@@ -1,0 +1,59 @@
+.experience-page {
+  @apply tw-space-y-12;
+}
+
+.experience-list {
+  @apply tw-space-y-5;
+}
+
+.experience-item {
+  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-6;
+
+  &__header {
+    @apply tw-flex tw-flex-wrap tw-items-baseline tw-justify-between tw-gap-2;
+  }
+
+  &__company {
+    @apply tw-text-xl tw-font-semibold tw-text-white;
+  }
+
+  &__period {
+    @apply tw-text-sm tw-text-zinc-400;
+  }
+
+  &__role {
+    @apply tw-mt-2 tw-text-zinc-200;
+  }
+
+  &__highlights {
+    @apply tw-mt-4 tw-space-y-2 tw-text-zinc-300;
+  }
+}
+
+.skills-section {
+  @apply tw-space-y-4;
+
+  &__title {
+    @apply tw-text-2xl tw-font-semibold tw-text-white;
+  }
+}
+
+.skills-grid {
+  @apply tw-grid tw-gap-4;
+
+  @screen md {
+    @apply tw-grid-cols-3;
+  }
+}
+
+.skill-group {
+  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-5;
+
+  &__title {
+    @apply tw-mb-3 tw-font-semibold tw-text-zinc-100;
+  }
+
+  &__items {
+    @apply tw-text-sm tw-leading-relaxed tw-text-zinc-300;
+  }
+}

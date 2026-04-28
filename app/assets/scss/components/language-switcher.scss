@@ -1,0 +1,19 @@
+.lang-switcher {
+  @apply tw-inline-flex tw-items-center tw-gap-1 tw-rounded-full tw-border tw-border-zinc-700 tw-p-1;
+}
+
+.lang-btn {
+  @apply tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-transition;
+
+  &--active {
+    @apply tw-bg-lime-300 tw-text-zinc-950;
+  }
+
+  &--inactive {
+    @apply tw-text-zinc-300;
+
+    &:hover {
+      @apply tw-bg-zinc-800 tw-text-white;
+    }
+  }
+}

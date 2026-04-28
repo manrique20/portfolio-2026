@@ -1,0 +1,32 @@
+.contact-page {
+  @apply tw-space-y-10;
+}
+
+.contact-grid {
+  @apply tw-grid tw-gap-4;
+
+  @screen md {
+    @apply tw-grid-cols-2;
+  }
+}
+
+.contact-card {
+  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-6;
+
+  &__label {
+    @apply tw-text-sm tw-uppercase tw-text-zinc-400;
+    letter-spacing: 0.2em;
+  }
+
+  &__link {
+    @apply tw-mt-3 tw-inline-block tw-text-lg tw-font-semibold tw-text-lime-300;
+
+    &:hover {
+      @apply tw-underline;
+    }
+  }
+
+  &__value {
+    @apply tw-mt-3 tw-text-lg tw-font-semibold tw-text-zinc-100;
+  }
+}

@@ -1,0 +1,32 @@
+.blog-article-page {
+  @apply tw-space-y-8;
+}
+
+.back-link {
+  @apply tw-inline-flex tw-items-center tw-gap-2 tw-text-sm tw-font-semibold tw-text-zinc-300 tw-transition;
+
+  &:hover {
+    @apply tw-text-white;
+  }
+}
+
+.blog-article {
+  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-7;
+
+  &__meta {
+    @apply tw-text-xs tw-uppercase tw-text-zinc-400;
+    letter-spacing: 0.2em;
+  }
+
+  &__title {
+    @apply tw-mt-4 tw-text-4xl tw-font-semibold tw-leading-tight tw-text-white;
+
+    @screen md {
+      @apply tw-text-5xl;
+    }
+  }
+
+  &__content {
+    @apply tw-mt-6 tw-max-w-3xl tw-leading-relaxed tw-text-zinc-200;
+  }
+}

@@ -1,0 +1,32 @@
+.blog-page {
+  @apply tw-space-y-10;
+}
+
+.blog-grid {
+  @apply tw-grid tw-gap-5;
+
+  @screen md {
+    @apply tw-grid-cols-2;
+  }
+}
+
+.blog-post {
+  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-6;
+
+  &__meta {
+    @apply tw-text-xs tw-uppercase tw-text-zinc-400;
+    letter-spacing: 0.2em;
+  }
+
+  &__title {
+    @apply tw-mt-3 tw-text-2xl tw-font-semibold tw-text-white;
+  }
+
+  &__excerpt {
+    @apply tw-mt-3 tw-leading-relaxed tw-text-zinc-300;
+  }
+
+  &__link {
+    @apply tw-mt-5 tw-inline-flex tw-items-center tw-gap-2 tw-text-sm tw-font-semibold tw-text-lime-300;
+  }
+}

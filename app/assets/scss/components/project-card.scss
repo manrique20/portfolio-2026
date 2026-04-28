@@ -1,0 +1,43 @@
+.project-card {
+  @apply tw-flex tw-h-full tw-flex-col tw-justify-between tw-overflow-hidden tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-transition;
+
+  &:hover {
+    border-color: rgb(190 242 100 / 0.5);
+  }
+
+  &__thumbnail {
+    @apply tw-h-40 tw-w-full tw-object-cover tw-transition tw-duration-300;
+
+    .project-card:hover & {
+      transform: scale(1.02);
+    }
+  }
+
+  &__body {
+    @apply tw-space-y-4 tw-p-6;
+  }
+
+  &__name {
+    @apply tw-text-xl tw-font-semibold tw-text-white;
+  }
+
+  &__tagline {
+    @apply tw-text-sm tw-leading-relaxed tw-text-zinc-300;
+  }
+
+  &__stack {
+    @apply tw-flex tw-flex-wrap tw-gap-2;
+  }
+
+  &__tag {
+    @apply tw-rounded-full tw-border tw-border-zinc-700 tw-px-3 tw-py-1 tw-text-xs tw-text-zinc-200;
+  }
+
+  &__cta {
+    @apply tw-mx-6 tw-mb-6 tw-mt-1 tw-inline-flex tw-items-center tw-gap-2 tw-text-sm tw-font-semibold tw-text-lime-300 tw-transition;
+
+    .project-card:hover & {
+      gap: 0.75rem;
+    }
+  }
+}

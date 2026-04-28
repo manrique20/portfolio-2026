@@ -10,10 +10,10 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="tw-space-y-10">
+  <div class="projects-page">
     <SectionTitle v-reveal :title="t('projects.title')" :subtitle="t('projects.subtitle')" />
 
-    <div class="tw-grid tw-gap-6 md:tw-grid-cols-2">
+    <div class="projects-page__grid">
       <ProjectCard
         v-for="project in localizedProjects"
         :key="project.slug"
@@ -28,3 +28,5 @@ useSeoMeta({
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped src="~/assets/scss/pages/projects-index.scss" />

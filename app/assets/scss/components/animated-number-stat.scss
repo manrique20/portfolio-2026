@@ -1,0 +1,11 @@
+.stat {
+  @apply tw-rounded-xl tw-border tw-border-zinc-700 tw-bg-zinc-900/70 tw-p-4;
+
+  &__value {
+    @apply tw-text-3xl tw-font-semibold tw-text-white;
+  }
+
+  &__label {
+    @apply tw-mt-1 tw-text-xs tw-leading-relaxed tw-text-zinc-300;
+  }
+}
