@@ -35,6 +35,11 @@ useSeoMeta({
         <p class="contact-card__value">{{ localizedProfile.location }}</p>
       </article>
     </section>
+
+    <section v-reveal="{ delay: 200 }" class="contact-ai-section">
+      <p class="contact-ai-section__label">AI</p>
+      <AiChat />
+    </section>
   </div>
 </template>
 

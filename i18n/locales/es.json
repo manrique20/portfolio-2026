@@ -60,5 +60,16 @@
   },
   "common": {
     "role": "Rol"
+  },
+  "ai": {
+    "title": "Pregúntame sobre mí",
+    "subtitle": "Pregunta lo que quieras sobre mi experiencia, habilidades o proyectos.",
+    "placeholder": "Ej. ¿Con qué tecnologías trabajas?",
+    "send": "Enviar",
+    "error": "Algo salió mal. Por favor intenta de nuevo.",
+    "errorRateLimit": "Demasiadas solicitudes — espera unos segundos e intenta de nuevo.",
+    "suggestion1": "¿En qué tecnologías te especializas?",
+    "suggestion2": "Cuéntame sobre tu proyecto más impactante.",
+    "suggestion3": "¿Cuál es tu trayectoria profesional?"
   }
 }

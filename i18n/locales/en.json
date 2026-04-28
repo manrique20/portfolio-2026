@@ -60,5 +60,16 @@
   },
   "common": {
     "role": "Role"
+  },
+  "ai": {
+    "title": "Ask about me",
+    "subtitle": "Ask anything about my experience, skills, or projects.",
+    "placeholder": "e.g. What technologies do you work with?",
+    "send": "Send",
+    "error": "Something went wrong. Please try again.",
+    "errorRateLimit": "Too many requests — please wait a few seconds and try again.",
+    "suggestion1": "What technologies do you specialize in?",
+    "suggestion2": "Tell me about your most impactful project.",
+    "suggestion3": "What's your professional background?"
   }
 }

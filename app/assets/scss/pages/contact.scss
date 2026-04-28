@@ -10,6 +10,15 @@
   }
 }
 
+.contact-ai-section {
+  @apply tw-space-y-3;
+
+  &__label {
+    @apply tw-text-xs tw-font-semibold tw-uppercase tw-text-zinc-500;
+    letter-spacing: 0.2em;
+  }
+}
+
 .contact-card {
   @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-6;
 
