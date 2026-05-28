@@ -97,6 +97,11 @@ useHead(() => ({
       </div>
     </section>
 
+    <section v-reveal="{ delay: 120 }" class="tech-3d">
+      <SectionTitle :title="t('home.techTitle')" :subtitle="t('home.techSubtitle')" />
+      <SkillSphere />
+    </section>
+
     <section v-reveal="{ delay: 140 }" class="how-i-work">
       <h2 class="how-i-work__title">{{ t('home.workTitle') }}</h2>
       <div class="how-i-work__grid">

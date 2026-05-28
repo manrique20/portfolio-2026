@@ -22,6 +22,8 @@
     "metricYearsLabel": "Años entregando productos en produccion",
     "metricUsersLabel": "Usuarios activos atendidos en producto de suscripcion",
     "metricProjectsLabel": "Proyectos destacados en este portafolio",
+    "techTitle": "Stack Tecnologico — 3D",
+    "techSubtitle": "Frontend, Backend, Cloud — tecnologias que uso a diario. Arrastra para explorar.",
     "workTitle": "Como trabajo",
     "workStep1": "Entiendo objetivo de negocio y flujo de usuario antes de tocar codigo.",
     "workStep2": "Diseno arquitectura modular para entregar rapido y escalar sin deuda.",
