@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxtjs/color-mode"],
+
+  colorMode: {
+    classPrefix: "tw-",
+    classSuffix: "",
+    preference: "system",
+    fallback: "dark",
+  },
   plugins: ["~/plugins/anime.server.ts", "~/plugins/anime.client.ts"],
   runtimeConfig: {
     groqApiKey: "",

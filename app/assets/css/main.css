@@ -8,8 +8,8 @@ html {
 
 body {
   font-family: "Avenir Next", "Manrope", "Segoe UI", sans-serif;
-  background: #09090b;
-  color: #f4f4f5;
+  @apply tw-bg-zinc-50 dark:tw-bg-zinc-950;
+  @apply tw-text-zinc-900 dark:tw-text-zinc-100;
 }
 
 a:focus-visible,

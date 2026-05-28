@@ -1,20 +1,20 @@
 .ai-chat {
-  @apply tw-space-y-5 tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-6;
+  @apply tw-space-y-5 tw-rounded-2xl tw-border tw-border-zinc-200 tw-bg-white tw-p-6 dark:tw-border-zinc-800 dark:tw-bg-zinc-900/60;
 
   &__header {
     @apply tw-flex tw-items-start tw-gap-4;
   }
 
   &__badge {
-    @apply tw-flex tw-h-9 tw-w-9 tw-flex-shrink-0 tw-items-center tw-justify-center tw-rounded-full tw-bg-lime-300 tw-text-xs tw-font-bold tw-text-zinc-950;
+    @apply tw-flex tw-h-9 tw-w-9 tw-flex-shrink-0 tw-items-center tw-justify-center tw-rounded-full tw-bg-lime-600 tw-text-xs tw-font-bold tw-text-white dark:tw-bg-lime-300 dark:tw-text-zinc-950;
   }
 
   &__title {
-    @apply tw-text-lg tw-font-semibold tw-text-white;
+    @apply tw-text-lg tw-font-semibold tw-text-zinc-900 dark:tw-text-white;
   }
 
   &__subtitle {
-    @apply tw-mt-0.5 tw-text-sm tw-text-zinc-400;
+    @apply tw-mt-0.5 tw-text-sm tw-text-zinc-500 dark:tw-text-zinc-400;
   }
 
   &__suggestions {
@@ -22,7 +22,7 @@
   }
 
   &__messages {
-    @apply tw-space-y-3 tw-overflow-y-auto tw-rounded-xl tw-bg-zinc-950/50 tw-p-4;
+    @apply tw-space-y-3 tw-overflow-y-auto tw-rounded-xl tw-bg-zinc-100/80 tw-p-4 dark:tw-bg-zinc-950/50;
     max-height: 300px;
     scroll-behavior: smooth;
   }
@@ -31,7 +31,7 @@
     @apply tw-flex tw-gap-1.5 tw-px-1 tw-py-1;
 
     span {
-      @apply tw-block tw-h-2 tw-w-2 tw-rounded-full tw-bg-zinc-500;
+      @apply tw-block tw-h-2 tw-w-2 tw-rounded-full tw-bg-zinc-400 dark:tw-bg-zinc-500;
       animation: typing-dot 1.2s infinite ease-in-out;
 
       &:nth-child(2) {
@@ -52,10 +52,10 @@
   }
 
   &__input {
-    @apply tw-flex-1 tw-rounded-full tw-border tw-border-zinc-700 tw-bg-zinc-900 tw-px-4 tw-py-2.5 tw-text-sm tw-text-zinc-100 tw-outline-none tw-transition;
+    @apply tw-flex-1 tw-rounded-full tw-border tw-border-zinc-300 tw-bg-zinc-100 tw-px-4 tw-py-2.5 tw-text-sm tw-text-zinc-800 tw-outline-none tw-transition dark:tw-border-zinc-700 dark:tw-bg-zinc-900 dark:tw-text-zinc-100;
 
     &::placeholder {
-      @apply tw-text-zinc-500;
+      @apply tw-text-zinc-400 dark:tw-text-zinc-500;
     }
 
     &:focus {
@@ -68,10 +68,10 @@
   }
 
   &__send {
-    @apply tw-rounded-full tw-bg-lime-300 tw-px-5 tw-py-2.5 tw-text-sm tw-font-semibold tw-text-zinc-950 tw-transition;
+    @apply tw-rounded-full tw-bg-lime-600 tw-px-5 tw-py-2.5 tw-text-sm tw-font-semibold tw-text-white tw-transition dark:tw-bg-lime-300 dark:tw-text-zinc-950;
 
     &:hover:not(:disabled) {
-      @apply tw-bg-lime-200;
+      @apply tw-bg-lime-500 dark:tw-bg-lime-200;
     }
 
     &:disabled {
@@ -81,10 +81,10 @@
 }
 
 .suggestion-chip {
-  @apply tw-rounded-xl tw-border tw-border-zinc-700 tw-bg-zinc-800/50 tw-px-4 tw-py-2.5 tw-text-left tw-text-sm tw-text-zinc-300 tw-transition;
+  @apply tw-rounded-xl tw-border tw-border-zinc-300 tw-bg-zinc-50/80 tw-px-4 tw-py-2.5 tw-text-left tw-text-sm tw-text-zinc-600 tw-transition dark:tw-border-zinc-700 dark:tw-bg-zinc-800/50 dark:tw-text-zinc-300;
 
   &:hover {
-    @apply tw-bg-zinc-800 tw-text-white;
+    @apply tw-bg-zinc-100 tw-text-zinc-900 dark:tw-bg-zinc-800 dark:tw-text-white;
     border-color: rgb(190 242 100 / 0.35);
   }
 }
@@ -105,11 +105,11 @@
     white-space: pre-wrap;
 
     .message--user & {
-      @apply tw-rounded-br-sm tw-bg-lime-300 tw-text-zinc-950;
+      @apply tw-rounded-br-sm tw-bg-lime-600 tw-text-white dark:tw-bg-lime-300 dark:tw-text-zinc-950;
     }
 
     .message--ai & {
-      @apply tw-rounded-bl-sm tw-bg-zinc-800 tw-text-zinc-200;
+      @apply tw-rounded-bl-sm tw-bg-zinc-200 tw-text-zinc-800 dark:tw-bg-zinc-800 dark:tw-text-zinc-200;
     }
 
     &--markdown {
@@ -118,7 +118,7 @@
       h1,
       h2,
       h3 {
-        @apply tw-font-semibold tw-text-white;
+        @apply tw-font-semibold tw-text-zinc-900 dark:tw-text-white;
         line-height: 1.3;
       }
 
@@ -131,20 +131,20 @@
         margin: 0.5em 0 0.25em;
       }
       h3 {
-        @apply tw-text-xs tw-uppercase tw-tracking-wide tw-text-lime-300;
+        @apply tw-text-xs tw-uppercase tw-tracking-wide tw-text-lime-600 dark:tw-text-lime-300;
         margin: 0.5em 0 0.2em;
       }
 
       strong {
-        @apply tw-font-semibold tw-text-white;
+        @apply tw-font-semibold tw-text-zinc-900 dark:tw-text-white;
       }
 
       em {
-        @apply tw-italic tw-text-zinc-300;
+        @apply tw-italic tw-text-zinc-600 dark:tw-text-zinc-300;
       }
 
       br + br {
-        display: none; // evita doble salto en headings
+        display: none;
       }
     }
   }

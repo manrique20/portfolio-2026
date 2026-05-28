@@ -1,5 +1,5 @@
 .layout {
-  @apply tw-min-h-screen tw-bg-zinc-950 tw-text-zinc-100;
+  @apply tw-min-h-screen tw-bg-zinc-50 tw-text-zinc-900 dark:tw-bg-zinc-950 dark:tw-text-zinc-100;
 }
 
 .container {
@@ -15,16 +15,17 @@
 }
 
 .header-bar {
-  @apply tw-flex tw-items-center tw-justify-between tw-gap-4 tw-rounded-2xl tw-border tw-border-zinc-800 tw-p-4 tw-backdrop-blur;
-  background-color: rgb(9 9 11 / 0.85);
+  @apply tw-flex tw-items-center tw-justify-between tw-gap-4 tw-rounded-2xl tw-border tw-border-zinc-200 tw-p-4 tw-backdrop-blur dark:tw-border-zinc-800;
+  background-color: rgb(250 250 250 / 0.85);
+  .tw-dark & { background-color: rgb(9 9 11 / 0.85); }
 }
 
 .logo {
-  @apply tw-text-sm tw-font-semibold tw-text-lime-300 tw-transition;
+  @apply tw-text-sm tw-font-semibold tw-text-lime-600 tw-transition dark:tw-text-lime-300;
   letter-spacing: 0.25em;
 
   &:hover {
-    @apply tw-text-lime-200;
+    @apply tw-text-lime-500 dark:tw-text-lime-200;
   }
 }
 
@@ -37,15 +38,15 @@
 }
 
 .nav-link {
-  @apply tw-text-zinc-300 tw-transition;
+  @apply tw-text-zinc-600 tw-transition dark:tw-text-zinc-300;
 
   &:hover {
-    @apply tw-text-white;
+    @apply tw-text-zinc-900 dark:tw-text-white;
   }
 
   &.router-link-active,
   &.router-link-exact-active {
-    @apply tw-text-lime-300;
+    @apply tw-text-lime-600 dark:tw-text-lime-300;
   }
 }
 
@@ -54,26 +55,26 @@
 }
 
 .btn-cv {
-  @apply tw-hidden tw-rounded-full tw-border tw-border-zinc-600 tw-px-4 tw-py-2 tw-text-xs tw-font-semibold tw-text-zinc-100 tw-transition;
+  @apply tw-hidden tw-rounded-full tw-border tw-border-zinc-400 tw-px-4 tw-py-2 tw-text-xs tw-font-semibold tw-text-zinc-700 tw-transition dark:tw-border-zinc-600 dark:tw-text-zinc-100;
 
   @screen md {
     @apply tw-inline-flex;
   }
 
   &:hover {
-    @apply tw-border-zinc-300;
+    @apply tw-border-zinc-600 dark:tw-border-zinc-300;
   }
 }
 
 .btn-intro {
-  @apply tw-hidden tw-rounded-full tw-bg-lime-300 tw-px-4 tw-py-2 tw-text-xs tw-font-semibold tw-text-zinc-950 tw-transition;
+  @apply tw-hidden tw-rounded-full tw-bg-lime-600 tw-px-4 tw-py-2 tw-text-xs tw-font-semibold tw-text-white tw-transition dark:tw-bg-lime-300 dark:tw-text-zinc-950;
 
   @screen md {
     @apply tw-inline-flex;
   }
 
   &:hover {
-    @apply tw-bg-lime-200;
+    @apply tw-bg-lime-500 dark:tw-bg-lime-200;
   }
 }
 
@@ -86,7 +87,7 @@
 }
 
 .hamburger__bar {
-  @apply tw-block tw-h-0.5 tw-w-5 tw-bg-zinc-300 tw-transition-all tw-duration-200;
+  @apply tw-block tw-h-0.5 tw-w-5 tw-bg-zinc-500 tw-transition-all tw-duration-200 dark:tw-bg-zinc-300;
 }
 
 .hamburger--open {
@@ -104,8 +105,9 @@
 }
 
 .mobile-menu {
-  @apply tw-mt-2 tw-rounded-2xl tw-border tw-border-zinc-800 tw-p-5 tw-backdrop-blur;
-  background-color: rgb(9 9 11 / 0.95);
+  @apply tw-mt-2 tw-rounded-2xl tw-border tw-border-zinc-200 tw-p-5 tw-backdrop-blur dark:tw-border-zinc-800;
+  background-color: rgb(250 250 250 / 0.95);
+  .tw-dark & { background-color: rgb(9 9 11 / 0.95); }
 
   @screen md {
     display: none;
@@ -116,35 +118,35 @@
   }
 
   &__link {
-    @apply tw-block tw-rounded-xl tw-px-4 tw-py-3 tw-text-sm tw-font-medium tw-text-zinc-300 tw-transition;
+    @apply tw-block tw-rounded-xl tw-px-4 tw-py-3 tw-text-sm tw-font-medium tw-text-zinc-600 tw-transition dark:tw-text-zinc-300;
 
     &:hover {
-      @apply tw-bg-zinc-800/60 tw-text-white;
+      @apply tw-bg-zinc-100 tw-text-zinc-900 dark:tw-bg-zinc-800/60 dark:tw-text-white;
     }
 
     &.router-link-active,
     &.router-link-exact-active {
-      @apply tw-text-lime-300;
+      @apply tw-text-lime-600 dark:tw-text-lime-300;
     }
   }
 
   &__actions {
-    @apply tw-mt-4 tw-flex tw-flex-col tw-gap-3 tw-border-t tw-border-zinc-800 tw-pt-4;
+    @apply tw-mt-4 tw-flex tw-flex-col tw-gap-3 tw-border-t tw-border-zinc-200 tw-pt-4 dark:tw-border-zinc-800;
   }
 
   &__btn-cv {
-    @apply tw-rounded-full tw-border tw-border-zinc-600 tw-px-4 tw-py-2.5 tw-text-center tw-text-sm tw-font-semibold tw-text-zinc-100 tw-transition;
+    @apply tw-rounded-full tw-border tw-border-zinc-400 tw-px-4 tw-py-2.5 tw-text-center tw-text-sm tw-font-semibold tw-text-zinc-700 tw-transition dark:tw-border-zinc-600 dark:tw-text-zinc-100;
 
     &:hover {
-      @apply tw-border-zinc-300;
+      @apply tw-border-zinc-600 dark:tw-border-zinc-300;
     }
   }
 
   &__btn-intro {
-    @apply tw-rounded-full tw-bg-lime-300 tw-px-4 tw-py-2.5 tw-text-center tw-text-sm tw-font-semibold tw-text-zinc-950 tw-transition;
+    @apply tw-rounded-full tw-bg-lime-600 tw-px-4 tw-py-2.5 tw-text-center tw-text-sm tw-font-semibold tw-text-white tw-transition dark:tw-bg-lime-300 dark:tw-text-zinc-950;
 
     &:hover {
-      @apply tw-bg-lime-200;
+      @apply tw-bg-lime-500 dark:tw-bg-lime-200;
     }
   }
 }
@@ -161,5 +163,5 @@
 }
 
 .site-footer {
-  @apply tw-mt-20 tw-border-t tw-border-zinc-800 tw-pt-6 tw-text-xs tw-text-zinc-500;
+  @apply tw-mt-20 tw-border-t tw-border-zinc-200 tw-pt-6 tw-text-xs tw-text-zinc-400 dark:tw-border-zinc-800 dark:tw-text-zinc-500;
 }

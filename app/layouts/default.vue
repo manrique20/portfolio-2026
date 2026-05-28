@@ -41,6 +41,7 @@ watch(() => route.path, () => {
           <div class="header-actions">
             <a :href="cvDownload" download class="btn-cv">{{ t('nav.cvCta') }}</a>
             <a :href="introLink" class="btn-intro">{{ t('nav.introCta') }}</a>
+            <ThemeToggle />
             <LanguageSwitcher />
             <button
               :class="['hamburger', { 'hamburger--open': menuOpen }]"

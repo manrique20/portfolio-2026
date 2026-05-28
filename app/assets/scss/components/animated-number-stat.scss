@@ -1,11 +1,11 @@
 .stat {
-  @apply tw-rounded-xl tw-border tw-border-zinc-700 tw-bg-zinc-900/70 tw-p-4;
+  @apply tw-rounded-xl tw-border tw-border-zinc-300 tw-bg-white tw-p-4 dark:tw-border-zinc-700 dark:tw-bg-zinc-900/70;
 
   &__value {
-    @apply tw-text-3xl tw-font-semibold tw-text-white;
+    @apply tw-text-3xl tw-font-semibold tw-text-zinc-900 dark:tw-text-white;
   }
 
   &__label {
-    @apply tw-mt-1 tw-text-xs tw-leading-relaxed tw-text-zinc-300;
+    @apply tw-mt-1 tw-text-xs tw-leading-relaxed tw-text-zinc-600 dark:tw-text-zinc-300;
   }
 }

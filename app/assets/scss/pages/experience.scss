@@ -7,26 +7,26 @@
 }
 
 .experience-item {
-  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-6;
+  @apply tw-rounded-2xl tw-border tw-border-zinc-200 tw-bg-white tw-p-6 dark:tw-border-zinc-800 dark:tw-bg-zinc-900/60;
 
   &__header {
     @apply tw-flex tw-flex-wrap tw-items-baseline tw-justify-between tw-gap-2;
   }
 
   &__company {
-    @apply tw-text-xl tw-font-semibold tw-text-white;
+    @apply tw-text-xl tw-font-semibold tw-text-zinc-900 dark:tw-text-white;
   }
 
   &__period {
-    @apply tw-text-sm tw-text-zinc-400;
+    @apply tw-text-sm tw-text-zinc-500 dark:tw-text-zinc-400;
   }
 
   &__role {
-    @apply tw-mt-2 tw-text-zinc-200;
+    @apply tw-mt-2 tw-text-zinc-600 dark:tw-text-zinc-200;
   }
 
   &__highlights {
-    @apply tw-mt-4 tw-space-y-2 tw-text-zinc-300;
+    @apply tw-mt-4 tw-space-y-2 tw-text-zinc-600 dark:tw-text-zinc-300;
   }
 }
 
@@ -34,7 +34,7 @@
   @apply tw-space-y-4;
 
   &__title {
-    @apply tw-text-2xl tw-font-semibold tw-text-white;
+    @apply tw-text-2xl tw-font-semibold tw-text-zinc-900 dark:tw-text-white;
   }
 }
 
@@ -47,13 +47,13 @@
 }
 
 .skill-group {
-  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-5;
+  @apply tw-rounded-2xl tw-border tw-border-zinc-200 tw-bg-white tw-p-5 dark:tw-border-zinc-800 dark:tw-bg-zinc-900/60;
 
   &__title {
-    @apply tw-mb-3 tw-font-semibold tw-text-zinc-100;
+    @apply tw-mb-3 tw-font-semibold tw-text-zinc-700 dark:tw-text-zinc-100;
   }
 
   &__items {
-    @apply tw-text-sm tw-leading-relaxed tw-text-zinc-300;
+    @apply tw-text-sm tw-leading-relaxed tw-text-zinc-600 dark:tw-text-zinc-300;
   }
 }

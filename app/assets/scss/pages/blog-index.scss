@@ -11,22 +11,22 @@
 }
 
 .blog-post {
-  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-6;
+  @apply tw-rounded-2xl tw-border tw-border-zinc-200 tw-bg-white tw-p-6 dark:tw-border-zinc-800 dark:tw-bg-zinc-900/60;
 
   &__meta {
-    @apply tw-text-xs tw-uppercase tw-text-zinc-400;
+    @apply tw-text-xs tw-uppercase tw-text-zinc-500 dark:tw-text-zinc-400;
     letter-spacing: 0.2em;
   }
 
   &__title {
-    @apply tw-mt-3 tw-text-2xl tw-font-semibold tw-text-white;
+    @apply tw-mt-3 tw-text-2xl tw-font-semibold tw-text-zinc-900 dark:tw-text-white;
   }
 
   &__excerpt {
-    @apply tw-mt-3 tw-leading-relaxed tw-text-zinc-300;
+    @apply tw-mt-3 tw-leading-relaxed tw-text-zinc-600 dark:tw-text-zinc-300;
   }
 
   &__link {
-    @apply tw-mt-5 tw-inline-flex tw-items-center tw-gap-2 tw-text-sm tw-font-semibold tw-text-lime-300;
+    @apply tw-mt-5 tw-inline-flex tw-items-center tw-gap-2 tw-text-sm tw-font-semibold tw-text-lime-600 dark:tw-text-lime-300;
   }
 }

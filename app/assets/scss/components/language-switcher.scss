@@ -1,19 +1,19 @@
 .lang-switcher {
-  @apply tw-inline-flex tw-items-center tw-gap-1 tw-rounded-full tw-border tw-border-zinc-700 tw-p-1;
+  @apply tw-inline-flex tw-items-center tw-gap-1 tw-rounded-full tw-border tw-border-zinc-300 tw-p-1 dark:tw-border-zinc-700;
 }
 
 .lang-btn {
   @apply tw-rounded-full tw-px-3 tw-py-1 tw-text-xs tw-font-semibold tw-transition;
 
   &--active {
-    @apply tw-bg-lime-300 tw-text-zinc-950;
+    @apply tw-bg-lime-600 tw-text-white dark:tw-bg-lime-300 dark:tw-text-zinc-950;
   }
 
   &--inactive {
-    @apply tw-text-zinc-300;
+    @apply tw-text-zinc-600 dark:tw-text-zinc-300;
 
     &:hover {
-      @apply tw-bg-zinc-800 tw-text-white;
+      @apply tw-bg-zinc-200 tw-text-zinc-900 dark:tw-bg-zinc-800 dark:tw-text-white;
     }
   }
 }

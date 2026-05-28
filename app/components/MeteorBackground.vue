@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const colorMode = useColorMode()
+const isDark = computed(() => colorMode.value === 'dark')
+
 interface Meteor {
   x: number
   y: number
@@ -67,9 +70,11 @@ onMounted(() => {
       const tailX = m.x + m.length * TAIL_DX
       const tailY = m.y + m.length * TAIL_DY
 
+      const tailEnd = isDark.value ? 190 : 101
+      const headEnd = isDark.value ? 220 : 132
       const grad = ctx.createLinearGradient(tailX, tailY, m.x, m.y)
-      grad.addColorStop(0, 'rgba(190, 242, 100, 0)')
-      grad.addColorStop(1, `rgba(190, 242, 100, ${m.opacity})`)
+      grad.addColorStop(0, `rgba(${tailEnd}, 242, 100, 0)`)
+      grad.addColorStop(1, `rgba(${tailEnd}, 242, 100, ${m.opacity})`)
 
       ctx.beginPath()
       ctx.moveTo(tailX, tailY)
@@ -82,7 +87,7 @@ onMounted(() => {
       // Bright head
       ctx.beginPath()
       ctx.arc(m.x, m.y, m.width * 0.9, 0, Math.PI * 2)
-      ctx.fillStyle = `rgba(220, 252, 140, ${m.opacity})`
+      ctx.fillStyle = `rgba(${headEnd}, 252, ${isDark.value ? 140 : 22}, ${m.opacity})`
       ctx.fill()
     }
 

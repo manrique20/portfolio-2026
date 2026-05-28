@@ -3,7 +3,7 @@
 }
 
 .hero {
-  @apply tw-relative tw-grid tw-gap-8 tw-overflow-hidden tw-rounded-3xl tw-border tw-border-zinc-800 tw-p-7;
+  @apply tw-relative tw-grid tw-gap-8 tw-overflow-hidden tw-rounded-3xl tw-border tw-border-zinc-200 tw-p-7 dark:tw-border-zinc-800;
   background: radial-gradient(circle at top right, rgba(163, 230, 53, 0.14), transparent 50%);
 
   @screen md {
@@ -20,17 +20,17 @@
 }
 
 .hero__kicker {
-  @apply tw-text-xs tw-font-semibold tw-uppercase tw-text-lime-300;
+  @apply tw-text-xs tw-font-semibold tw-uppercase tw-text-lime-600 dark:tw-text-lime-300;
   letter-spacing: 0.24em;
 }
 
 .hero__location {
-  @apply tw-text-sm tw-font-medium tw-uppercase tw-text-zinc-400;
+  @apply tw-text-sm tw-font-medium tw-uppercase tw-text-zinc-500 dark:tw-text-zinc-400;
   letter-spacing: 0.2em;
 }
 
 .hero__name {
-  @apply tw-text-4xl tw-font-semibold tw-leading-tight tw-text-white;
+  @apply tw-text-4xl tw-font-semibold tw-leading-tight tw-text-zinc-900 dark:tw-text-white;
 
   @screen md {
     @apply tw-text-6xl;
@@ -42,11 +42,11 @@
 }
 
 .hero__role-title {
-  @apply tw-text-2xl tw-font-medium tw-text-zinc-100;
+  @apply tw-text-2xl tw-font-medium tw-text-zinc-700 dark:tw-text-zinc-100;
 }
 
 .hero__blurb {
-  @apply tw-max-w-2xl tw-text-base tw-leading-relaxed tw-text-zinc-200;
+  @apply tw-max-w-2xl tw-text-base tw-leading-relaxed tw-text-zinc-600 dark:tw-text-zinc-200;
 }
 
 .hero__actions {
@@ -54,15 +54,15 @@
 }
 
 .btn-primary {
-  @apply tw-rounded-full tw-bg-lime-300 tw-px-5 tw-py-3 tw-text-sm tw-font-semibold tw-text-zinc-950 tw-transition;
+  @apply tw-rounded-full tw-bg-lime-600 tw-px-5 tw-py-3 tw-text-sm tw-font-semibold tw-text-white tw-transition dark:tw-bg-lime-300 dark:tw-text-zinc-950;
 
   &:hover {
-    @apply tw-bg-lime-200;
+    @apply tw-bg-lime-500 dark:tw-bg-lime-200;
   }
 }
 
 .btn-ghost {
-  @apply tw-rounded-full tw-border tw-border-zinc-700 tw-px-5 tw-py-3 tw-text-sm tw-font-semibold tw-text-zinc-100 tw-transition;
+  @apply tw-rounded-full tw-border tw-border-zinc-300 tw-px-5 tw-py-3 tw-text-sm tw-font-semibold tw-text-zinc-700 tw-transition dark:tw-border-zinc-700 dark:tw-text-zinc-100;
 
   &:hover {
     @apply tw-border-zinc-400;
@@ -70,17 +70,18 @@
 }
 
 .hero__aside {
-  @apply tw-relative tw-z-10 tw-space-y-4 tw-rounded-2xl tw-border tw-bg-zinc-900/60 tw-p-6;
-  border-color: rgb(63 63 70 / 0.8);
+  @apply tw-relative tw-z-10 tw-space-y-4 tw-rounded-2xl tw-border tw-bg-white tw-p-6 dark:tw-bg-zinc-900/60;
+  border-color: rgb(228 228 231);
+  .tw-dark & { border-color: rgb(63 63 70 / 0.8); }
 }
 
 .hero__label {
-  @apply tw-text-sm tw-uppercase tw-text-zinc-400;
+  @apply tw-text-sm tw-uppercase tw-text-zinc-500 dark:tw-text-zinc-400;
   letter-spacing: 0.2em;
 }
 
 .hero__role-value {
-  @apply tw-text-lg tw-font-semibold tw-text-white;
+  @apply tw-text-lg tw-font-semibold tw-text-zinc-900 dark:tw-text-white;
 }
 
 .hero__stats {
@@ -88,7 +89,7 @@
 }
 
 .hero__proof {
-  @apply tw-text-xs tw-leading-relaxed tw-text-zinc-400;
+  @apply tw-text-xs tw-leading-relaxed tw-text-zinc-500 dark:tw-text-zinc-400;
 }
 
 .featured {
@@ -112,7 +113,7 @@
 }
 
 .how-i-work__title {
-  @apply tw-text-3xl tw-font-semibold tw-tracking-tight tw-text-white;
+  @apply tw-text-3xl tw-font-semibold tw-tracking-tight tw-text-zinc-900 dark:tw-text-white;
 
   @screen md {
     @apply tw-text-4xl;
@@ -128,14 +129,14 @@
 }
 
 .step {
-  @apply tw-rounded-2xl tw-border tw-border-zinc-800 tw-bg-zinc-900/60 tw-p-5;
+  @apply tw-rounded-2xl tw-border tw-border-zinc-200 tw-bg-white tw-p-5 dark:tw-border-zinc-800 dark:tw-bg-zinc-900/60;
 }
 
 .step__number {
-  @apply tw-mb-2 tw-text-xs tw-font-semibold tw-uppercase tw-text-lime-300;
+  @apply tw-mb-2 tw-text-xs tw-font-semibold tw-uppercase tw-text-lime-600 dark:tw-text-lime-300;
   letter-spacing: 0.2em;
 }
 
 .step__text {
-  @apply tw-text-sm tw-leading-relaxed tw-text-zinc-200;
+  @apply tw-text-sm tw-leading-relaxed tw-text-zinc-600 dark:tw-text-zinc-200;
 }
