@@ -4,6 +4,10 @@ import * as THREE from 'three'
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
 
+const props = withDefaults(defineProps<{ fullscreen?: boolean; cameraDistance?: number }>(), { fullscreen: false, cameraDistance: 6 })
+
+const cameraZ = computed(() => Math.max(3, Math.min(16, props.cameraDistance)))
+
 const sunRef = ref<THREE.Mesh | null>(null)
 const marsGroup = ref<THREE.Group | null>(null)
 const earthGroup = ref<THREE.Group | null>(null)
@@ -87,8 +91,9 @@ function generateEarthTexture(): THREE.CanvasTexture {
 }
 
 function buildParticles(): THREE.Points {
-  const positions = new Float32Array(600 * 3)
-  for (let i = 0; i < 600; i++) {
+  const count = props.fullscreen ? 200 : 600
+  const positions = new Float32Array(count * 3)
+  for (let i = 0; i < count; i++) {
     const r = 5 + Math.random() * 5
     const theta = Math.random() * Math.PI * 2
     const phi = Math.acos(2 * Math.random() - 1)
@@ -160,7 +165,7 @@ const planetColors = computed(() => ({
 </script>
 
 <template>
-  <TresPerspectiveCamera :position="[0, 4, 10]" :fov="45" />
+  <TresPerspectiveCamera :position="fullscreen ? [0, 2, cameraZ] : [0, 4, 10]" :fov="fullscreen ? 50 : 45" />
   <OrbitControls
     :auto-rotate="true"
     :auto-rotate-speed="0.8"

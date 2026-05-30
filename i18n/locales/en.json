@@ -24,6 +24,7 @@
     "metricProjectsLabel": "Featured projects in this portfolio",
     "techTitle": "Tech Stack — 3D",
     "techSubtitle": "Frontend, Backend, Cloud — technologies I use daily. Drag to explore.",
+    "techExplore3d": "Explore in 3D",
     "workTitle": "How I work",
     "workStep1": "Understand product goal and user journey before touching code.",
     "workStep2": "Design modular architecture that ships fast and scales cleanly.",
