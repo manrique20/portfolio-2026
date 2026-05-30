@@ -27,15 +27,15 @@ const JOKES = [
   'There are only 10 types of people in the world: those who understand binary and those who don\'t.',
 ]
 
-const BANNER = `<span class="accent">╔══════════════════════════════════════════════════════╗
-║     ____  _   _ __  __  ___    _ __   ___ _ __ ___    ║
-║    / ___|| | | |  \\/  |/ __|  | '_ \\ / _ \\ \`__/ __|   ║
-║    \\___ \\| |_| | |\\/| |\\__ \\  | | | |  __/ |  \\__ \\   ║
-║    |____/ \\__,_|_|  |_||___/  |_| |_|\\___|_|  |___/   ║
+const BANNER = `<span class="accent">╔════════════════════════════════════════════════════════╗
+║     ____  _   _ __  __  ___    _ __   ___ _ __ ___     ║
+║    / ___|| | | |  \\/  |/ __|  | '_ \\ / _ \\ \`__/ __|    ║
+║    \\___ \\| |_| | |\\/| |\\__ \\  | | | |  __/ |  \\__ \\    ║
+║    |____/ \\__,_|_|  |_||___/  |_| |_|\\___|_|  |___/    ║
 ║                                                        ║
 ║    Frontend-focused Full-Stack Engineer                ║
-║    Type '<span class="cmd">help</span>' to see available commands                   ║
-╚══════════════════════════════════════════════════════╝</span>`
+║    Type '<span class="cmd">help</span>' to see available commands               ║
+╚════════════════════════════════════════════════════════╝</span>`
 
 function add(text: string, type: 'output' | 'error' = 'output') {
   lines.value.push({ html: text, type })
