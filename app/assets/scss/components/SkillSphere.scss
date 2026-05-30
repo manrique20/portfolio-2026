@@ -20,8 +20,8 @@ $text-bright: #f4f4f5;
 }
 
 .skill-sphere {
+  @apply lg:tw-h-[420px] max-lg:tw-h-[370px];
   width: 100%;
-  height: 420px;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
@@ -52,7 +52,7 @@ $text-bright: #f4f4f5;
     font-weight: 500;
     cursor: pointer;
     transition: background 0.2s, border-color 0.2s;
-    align-self: anchor-center;
+    align-self: center;
 
     &:hover {
       background: $bg-zinc-mid;
@@ -91,12 +91,18 @@ $text-bright: #f4f4f5;
 
   &__zoom-controls {
     position: absolute;
-    bottom: 32px;
-    left: 50%;
+    bottom: 16px;
+    right: 16px;
     z-index: $z-controls;
     display: flex;
     gap: 12px;
-    transform: translateX(-50%);
+
+    &--centered {
+      bottom: 32px;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
   }
 
   &__zoom-btn {
@@ -149,7 +155,7 @@ $text-bright: #f4f4f5;
 .skill-pill {
   @extend %tag-base;
   transition: background 0.2s, border-color 0.2s;
-
+    padding: 3px 14px;
   :global(.tw-dark) & {
     @extend %tag-base;
   }
