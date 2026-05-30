@@ -20,7 +20,6 @@ $text-bright: #f4f4f5;
 }
 
 .skill-sphere {
-  @apply lg:tw-h-[420px] max-lg:tw-h-[370px];
   width: 100%;
   position: relative;
   border-radius: 16px;
@@ -134,7 +133,6 @@ $text-bright: #f4f4f5;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 8px 0;
 
   &__title {
     margin: 0 0 10px;
@@ -149,15 +147,17 @@ $text-bright: #f4f4f5;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    padding: 3px 14px;
   }
 }
 
 .skill-pill {
   @extend %tag-base;
   transition: background 0.2s, border-color 0.2s;
-    padding: 3px 14px;
+  padding: 3px 14px;
   :global(.tw-dark) & {
     @extend %tag-base;
+
   }
 
   &:hover {
@@ -228,6 +228,7 @@ $text-bright: #f4f4f5;
   }
 
   &__tag {
+    padding: 3px;
     @extend %tag-base;
   }
 }
