@@ -1,7 +1,7 @@
 <template>
   <div class="skill-sphere">
     <ClientOnly v-if="!isMobile">
-      <TresCanvas clear-color="#00000000" window-size>
+      <TresCanvas clear-color="#00000000">
         <SkillSphereScene @select-skill="onSelectSkill" />
       </TresCanvas>
       <template #fallback>
