@@ -14,7 +14,7 @@ ABOUT JUAN SEBASTIAN:
 
 WORK EXPERIENCE:
 1. Kubo S.A.S. (2024 – Present) — Frontend Developer
-   Builds Nuxt 3 and Vue 3 products with TypeScript and modular architecture. Implements SSR and performance improvements for SEO-heavy platforms. Works in agile cycles across product, design, and backend teams.
+   Builds Nuxt 3 + Vue 3 or React + Next.js products with TypeScript and modular architecture. Implements SSR and performance improvements for SEO-heavy platforms. Works in agile cycles across product, design, and backend teams.
 
 2. Workana (2022 – 2024) — Freelance Frontend Developer
    Delivered end-to-end web solutions for international clients. Built scalable frontends with Vue, React, Next.js, and TypeScript. Integrated APIs, auth flows, and backend services with FastAPI.

@@ -164,7 +164,7 @@ function exec(raw: string) {
         add(`<span class="accent">README</span>
   Personal portfolio of <span class="accent">Juan Sebastian Manrique Garcia</span>
   Frontend-focused Full-Stack Engineer
-  Built with Nuxt 4 + Vue 3 + TypeScript + Tailwind CSS`)
+  Built with Nuxt 4 + Vue 3 or React + Next.js + TypeScript + Tailwind CSS`)
         break
       }
       const proj = projects.find((p: PortfolioProject) => p.slug === slug)
@@ -246,7 +246,7 @@ function exec(raw: string) {
     .-.\`\`..-/\`.         ${profile.name}
   .\` .\`\`\`  \`.\`  :       --------------------
   /  .\`  \` \` \` \`  \\      OS: Portfolio v4
-  | :   \`  \`  :  :      Kernel: Nuxt 4 + Vue 3
+  | :   \`  \`  :  :      Kernel: Nuxt 4 + Vue 3 or React + Next.js
   \\ :  \`  \`  \`  : /      Uptime: 2 years of shipping
   \\ \`-._\`\`\`_.-\` /       Shell: /bin/jsmg
    \`\`\`\`\`\`\`\`\`\`\`\`\`         Projects: ${projects.length}

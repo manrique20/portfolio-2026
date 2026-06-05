@@ -19,12 +19,12 @@ export const experience: ExperienceItem[] = [
     period: '2024 - Present',
     highlights: {
       en: [
-        'Built Nuxt 3 and Vue 3 products with TypeScript and modular architecture.',
+        'Built Nuxt / Vue 3 & React / Next.js products with TypeScript and modular architecture.',
         'Implemented SSR and performance improvements for SEO-heavy platforms.',
         'Collaborated across product, design, and backend teams in agile cycles.'
       ],
       es: [
-        'Desarrollo de productos Nuxt 3 y Vue 3 con TypeScript y arquitectura modular.',
+        'Desarrollo de productos Nuxt / Vue 3 & React / Next.js con TypeScript y arquitectura modular.',
         'Implementacion de SSR y mejoras de rendimiento para plataformas orientadas a SEO.',
         'Colaboracion con equipos de producto, diseno y backend en ciclos agiles.'
       ]
